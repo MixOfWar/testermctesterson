@@ -1,5 +1,5 @@
 import React from "react";
-const API_URL = "http://localhost:3000/api";
+const API_URL = `${process.env.PORT}` + "/api";
 
 export const useFetch = (url, options = {}) => {
   const [response, setResponse] = React.useState(null);

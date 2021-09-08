@@ -3,7 +3,7 @@ let repoName = gitRepoName.sync("../../");
 module.exports = {
   app: {
     name: repoName,
-    apiEndpoint: (process.env.API_URL) ? `/${process.env.API_URL}` : '/api',
+    apiEndpoint: (process.env.PORT) ? `/${process.env.PORT}` : '/api',
   },
   database: {
     url: `mongodb+srv://mxsilentwar:103117Dp!@teaching.sll1f.mongodb.net/testerson?retryWrites=true&w=majority`,
